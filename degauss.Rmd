@@ -8,15 +8,28 @@ author:
   - name: Andrew Vancil
   - name: Cole Brokamp
 affiliation:
-    address: "Division of Biostatistics and Epidemiology, Cincinnati Children's Hospital Medical Center\n\nCollege of Medicine, University of Cincinnati"
-poster_width: "65in"
-poster_height: "47in"
+  - num: 
+    address: Division of Biostatistics and Epidemiology, Cincinnati Children's Hospital Medical Center
+  - num: 
+    address: College of Medicine, University of Cincinnati
+poster_width: "48in"
+poster_height: "36in"
+title_textsize: "70pt"
+author_textsize: "30pt"
+authorextra_textsize: "25px"
+affiliation_textsize: "30px"
+sectitle_textsize: "60px"
+caption_fontsize: "20px"
+body_textsize: "34px"
+reference_textsize: "23px"
+bibliography_spacing: 0.5
 column_numbers: 3
 primary_colour: "`r CB::cb_colors()['navy']`"
 secondary_colour: "`r CB::cb_colors()['aqua']`" 
 accent_colour: "`r CB::cb_colors()['fuchsia']`"
 titlebox_bordercol: "`r CB::cb_colors()['aqua']`" 
 titlebox_borderwidth: "0.5cm"
+columnline_width: "0pt" #width of line between each column
 font_family: Poppins
 logoright_name: https&#58;//raw.githubusercontent.com/degauss-org/degauss_template/master/DeGAUSS_hex.png
 logoleft_name: https&#58;//raw.githubusercontent.com/degauss-org/degauss_template/master/DeGAUSS_hex.png
@@ -48,7 +61,7 @@ knitr::opts_chunk$set(echo = FALSE)
     - access to healthcare (Figure 1c), healthy food, pharmacies, transportation
     - noise, heat, walkability, parks, proximity to roads/traffic (Figure 1d)
 
-```{r fig1, out.width='100%', fig.cap='Geomarker Examples'}
+```{r fig1, out.width='80%', fig.cap='Geomarker Examples', fig.align='center'}
 knitr::include_graphics('figs/geomarkers.png')
 ```
 
@@ -66,7 +79,6 @@ knitr::include_graphics('figs/geomarkers.png')
 # DeGAUSS
 
 <br>
-
 <center>
 **DE**centralized **G**eomarker **A**ssessment for m**U**lti **S**ite **S**tudies
 </center>
@@ -99,11 +111,11 @@ knitr::include_graphics('figs/DeG_flow.png')
 - Sharing exposure assessment models
 - Electronic health record and registry integration
 
-## Development
+### Development
 
 The setup shown below utilizes Docker and `R` to build DeGAUSS software that is self-contained and does not require passing PHI to the internet, but a similar workflow can be employed using other programming languages and containerization software.
 
-```{r fig4, out.width='50%', fig.cap='DeGAUSS Development', fig.align='center'}
+```{r fig4, out.width='40%', fig.cap='DeGAUSS Development', fig.align='center'}
 knitr::include_graphics('figs/DeG_dev.png')
 ```
 
@@ -113,25 +125,30 @@ knitr::include_graphics('figs/DeG_dev.png')
 
 # Summary
 
+<br>
 DeGAUSS is a secure, decentralized, and reproducible approach to solving geospatial privacy issues in multi-site studies, but it also excels as a vehicle for making spatiotemporal exposure assessment prediction models findable, accessible, interoperable, and reusable (FAIR).
+<br>
 
 # Contact
 
-<img src="figs/used_by.png" style="float:right" width="1000" /> 
+<img src="figs/used_by.png" style="float:right" width="750" /> 
 
 - Free and open source development
 - Ongoing user [feedback](https://redcap.link/gvhbxfjd)
 
-<img src="figs/home.png" style="float:left; margin:0px 15px 0px 0px" /> [https://degauss.org](https://degauss.org)
+<img src="figs/home.png" style="float:left; margin:0px 15px 0px 0px" width="50"/> [https://degauss.org](https://degauss.org)
 
-<img src="figs/github.png" style="float:left; margin:0px 15px 0px 0px" />  \@degauss-org
+<img src="figs/github.png" style="float:left; margin:0px 15px 0px 0px" width="50"/>  \@degauss-org
 
-<img src="figs/mail.png" style="float:left; margin:0px 15px 0px 0px" /> erika.rasnick@cchmc.org
+<img src="figs/mail.png" style="float:left; margin:0px 15px 0px 0px" width="50"/> erika.rasnick@cchmc.org
 
-<img src="figs/twitter.png" style="float:left; margin:0px 15px 0px 0px" />  \@erika_rasnick
+<img src="figs/twitter.png" style="float:left; margin:0px 15px 0px 0px" width="50"/>  \@erika_rasnick
+<br>
+<br>
 
 # References
 
+<br>
 Cole Brokamp, Chris Wolfe, Todd Lingren, John Harley, Patrick Ryan. Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies. *Journal of American Medical Informatics Association*. 25(3). 309-314. 2018. [Download.](https://colebrokamp-website.s3.amazonaws.com/publications/Brokamp_JAMIA_2017.pdf)
 
 Cole Brokamp. DeGAUSS: Decentralized Geomarker Assessment for Multi-Site Studies. *Journal of Open Source Software*. 2018. [Download.](https://colebrokamp-website.s3.amazonaws.com/publications/Brokamp_JOSS_2018.pdf)
